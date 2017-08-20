@@ -155,7 +155,7 @@ endif
 " ##### END CTRLP PLUGIN SETTINGS
 
 " ##### PROMPTLINE PLUGIN SETTINGS
-" if !empty(glob(expand("~/.vim/bundle/promptline-vim")))
+if !empty(glob(expand("~/.vim/bundle/promptline-vim")))
     let g:promptline_preset = {
         \'a': [ promptline#slices#host() ],
         \'b': [ promptline#slices#user() ],
@@ -164,5 +164,5 @@ endif
         \'z': [ promptline#slices#vcs_branch() ],
         \'warn': [ promptline#slices#last_exit_code() ]}
     let g:promptline_theme = 'airline'
-" endif
+endif
 " ##### END PROMPTLINE PLUGIN SETTINGS
